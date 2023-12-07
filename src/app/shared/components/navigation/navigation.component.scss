@@ -1,0 +1,30 @@
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .menu-item {
+    font-size: 16px;
+    color: #838383;
+    padding: 20px;
+    width: 250px;
+    text-wrap: nowrap;
+
+    &:hover {
+      font-weight: 500;
+      cursor: pointer;
+      color: #111;
+    }
+
+    a {
+      color: #838383;
+      text-decoration: none;
+    }
+
+    span.selected {
+      color: #02c6eb;
+      font-weight: 500;
+    }
+  }
+}

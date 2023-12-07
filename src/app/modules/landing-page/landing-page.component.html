@@ -1,0 +1,29 @@
+<div class="header">
+  <div>
+    <img [src]="imgPath + 'logo.png'" />
+    <div class="title">Lorem ipsum dolor sit amet</div>
+    <div class="description">consectetur adipiscing elit, sed do eius
+      mod tempor incididunt ut labore et dolo
+      re magna aliqua onsectetur adipiscing
+      elit, sed do eius mod tempor incid.</div>
+  </div>
+  <div>
+    <app-news-blog></app-news-blog>
+  </div>
+</div>
+
+<div *ngIf="(menus | async) as menus">
+  <app-navigation [menus]="menus"></app-navigation>
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="contact-section">
+  <app-contact-us-today></app-contact-us-today>
+  <app-contact-us></app-contact-us>
+</div>
+
+<div class="footer-section">
+  <app-signup-newsletter></app-signup-newsletter>
+  <app-footer></app-footer>
+</div>

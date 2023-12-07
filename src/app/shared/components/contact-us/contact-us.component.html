@@ -1,0 +1,9 @@
+<div class="contact-us">
+  <div class="title">{{ title }}</div>
+  <div class="list">
+    <div class="item" *ngFor="let item of items">
+      <img [src]="imgPath + item.image" />
+      <span>{{ item.name }}</span>
+    </div>
+  </div>
+</div>

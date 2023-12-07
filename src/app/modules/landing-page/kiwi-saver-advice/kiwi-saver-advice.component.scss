@@ -1,0 +1,39 @@
+
+.kiwi-saver-container {
+  display: flex;
+  flex-direction: row;
+  
+  > div {
+    padding: 30px;
+    background-color: #0dc0e9;
+    color: #fff;
+  }
+
+  .title {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+
+  .description {
+    margin-bottom: 20px;
+  }
+
+  .description, 
+  .sub-description {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+
+  .learn-more-advisers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: thin #fff solid;
+    justify-content: space-between;
+    padding-left: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+}

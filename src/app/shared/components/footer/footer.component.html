@@ -1,0 +1,18 @@
+<div class="footer-container">
+  <div>
+    <img [src]="imgPath + 'logo.png'" />
+  </div>
+  <div class="menus">
+    <div *ngFor="let menu of footerMenu">
+      <a href="#">{{ menu }}</a>
+    </div>
+  </div>
+  <div class="info">
+    <div>0800 700 699</div>
+    <div>reception@havenadvisers.co.nz</div>
+  </div>
+</div>
+
+<div class="copyright">
+  <div>Copyright © 2017 Haven Advisers Limited. All rights reserved.</div>
+</div>

@@ -1,0 +1,9 @@
+<div class="news-blog">
+  <div class="title">{{ title }}</div>
+  <div class="list">
+    <div class="item" *ngFor="let item of items" (click)="onRoute()">
+      <span>{{ item }}</span>
+      <img [src]="imgPath + 'gray-arrow.jpg'" />
+    </div>
+  </div>
+</div>

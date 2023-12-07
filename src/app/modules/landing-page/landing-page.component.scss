@@ -1,0 +1,42 @@
+
+.header {
+  display: flex;
+  flex-direction: row;
+
+  > div {
+    &:first-child {
+      width: 50%;
+      background-color: #1dc5ea;
+      padding: 50px;
+      color: #fff;
+    }
+
+    &:nth-child(2) {
+      background-color: #f5f5f5;
+      width: 50%;
+    }
+  }
+
+  img {
+    margin-bottom: 100px;
+  }
+
+  .title {
+    font-size: 72px;
+    line-height: 75px;
+  }
+
+  .description {
+    font-size: 36px;
+    line-height: 65px;
+  }
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-section {
+  background-color: #2d2d2d;
+}

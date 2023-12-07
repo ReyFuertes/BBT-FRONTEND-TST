@@ -1,0 +1,133 @@
+:host {
+  width: 60%;
+}
+
+.contact-us-today-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #0cbfe8;
+  color: #fff;
+  justify-content: center;
+  padding: 50px;
+
+  .section-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .description {
+    font-weight: 300;
+    line-height: 25px;
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  input {
+    border: thin #fff solid;
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    margin: 5px;
+    padding: 5px 10px;
+    width: 33%;
+
+    &.ng-invalid.ng-touched {
+      border: red 1px solid;
+    }
+  }
+
+  select {
+    border: thin #fff solid;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    margin: 5px;
+    padding: 5px 10px;
+    width: 33%;
+    font-size: 16px;
+
+    option {
+      padding: 40px;
+      background: #fff;
+      color: #333;
+      border: thin #fff solid;
+      font-size: 16px;
+    }
+
+    &.ng-invalid.ng-touched {
+      border: red 1px solid;
+    }
+  }
+
+  textarea {
+    border: thin #fff solid;
+    height: 85px;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    margin: 5px;
+    padding: 5px 10px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+  }
+
+  button {
+    background-color: #fff;
+    border: thin #fff solid;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    min-width: 150px;
+    margin-top: 8px;
+
+    &:disabled {
+      cursor: not-allowed;
+      pointer-events: all !important;
+    }
+  }
+
+  ::-ms-input-placeholder {
+    /* Edge 12-18 */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  ::placeholder {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    div:last-child {
+      display: flex;
+      justify-content: end;
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+    }
+  }
+}
